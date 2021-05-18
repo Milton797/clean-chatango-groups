@@ -1,0 +1,40 @@
+/* ==UserStyle==
+@author       Milton797
+@version      1.0.0
+@name         Clean chatango groups
+@description  Create clean window on chatango groups
+@namespace    https://github.com/Milton797/clean-chatango-groups
+@homepageURL  https://github.com/Milton797/clean-chatango-groups
+@updateURL    https://raw.githubusercontent.com/Milton797/clean-chatango-groups/master/clean-chatango-groups.user.css
+==/UserStyle== */
+@-moz-document domain("chatango.com") {
+    /* New settings */
+
+    /*
+    Delete chatango logo, group links
+    warning ?iframe link and bar with help links.
+    */
+    #group_table > tbody > tr:nth-child(2) > td.logo_cell,
+    #group_table > tbody > tr:nth-child(2) > td.ad_cell,
+    #group_table > tbody > tr:nth-child(3) > td > div:nth-child(1) > a,
+    #TL_URL_cntnr,
+    #iframeWarning,
+    .bottombar {
+        display: none 
+    }
+    
+    /*
+    Fix to group description.
+    */
+    .group_desc {
+        text-align: justify;
+    }
+    
+    /*
+    Always show user list.
+    */
+    #FTR_phn {
+        display: inline-block !important
+    }
+    
+    }
